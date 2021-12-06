@@ -10,13 +10,51 @@
 
 ## Code Problems
 
-1. Declare a function named `replaceWithYerr` that accepts three arguments: an Array, a start index, and the number of elements to replace with the string 'yerr'. The function should return a **new** Array, with the same elements as the original Array, except elements at the starting index, are replaced with the string 'yerr'. The number of elements replaced is determined by the third argument. 
+**All the following problems can be solved using a higher order array method. You cannot use .forEach() to solve the following problems.** 
 
-**Note**: The second and third arguments are *optional*. If the third argument is missing, the function should return replace all elements from the starting index to the end of the array. If only an array argument is passed, it should return a copy of the array argument, with all elements replaced.
-```
-const months = ['Jan', 'February', 'March', 'April', 'May', 'June'];
+**Test all your solutions for questions 1-6 with the following variable:** 
 
-replaceWithYerr(months, 1, 3) //['Jan', 'yerr', 'yerr, 'yerr', 'May', 'June']
-replaceWithYerr(months, 1) //['Jan', 'yerr', 'yerr, 'yerr', 'yerr', 'yerr']
-replaceWithYerr(months) //['yerr', 'yerr', 'yerr, 'yerr', 'yerr', 'yerr']
-```
+`const animals =['cheetah','dog', 'cat', 'dodobird', 'bear', 'dolphin']`
+
+1. Write a function named `pluralize` that takes an array of words that are singular and returns a new array of the same words pluralized.
+    
+    ```jsx
+    pluralize(animals) // ['cheetahs','dogs', 'cats', 'dodobirds', 'bears', 'dolphins']
+    ```
+    
+2. Write a function named `uppercase` that takes an array of strings change every first letter in the string to uppercase.
+    
+    ```jsx
+    uppercase(animals) // ['Cheetah','Dog', 'Cat', 'Dodobird', 'Bear', 'Dolphin']
+    ```
+    
+3. Write a function named `longWords` that takes an array of strings and returns only the strings with more than 3 letters
+    
+    ```jsx
+    longWords(animals) // ['cheetah', 'dodobird', 'bear', 'dolphin']
+    ```
+    
+4. Write a function named `shortWords` that takes an array of strings return the strings with less than 5 letters
+    
+    ```jsx
+    shortWords(animals) // ['dog', 'cat', 'bear']
+    ```
+    
+5. Write a function named `oddLength` that  takes an array of strings and returns an array of just the words that have an odd number of characters:
+    
+    ```jsx
+    oddLength(animals) // ['cheetah','dog', 'cat', 'dolphin']
+    ```
+    
+6. Write a function named `longToShort` that takes an array of strings, and sorts the array by string length in order of greatest to least 
+    
+    ```jsx
+    longToShort(animals) //['cheetah','dog', 'cat', 'dodobird', 'bear', 'dolphin']
+    ```
+    
+7. Write a function named `sum` that takes an array of numbers and returns the sum of all the numbers in the array.
+    
+    ```jsx
+    const numbers = [22, 15, 1114, 416, 37, 4]
+    sum(numbers) // 1608
+    ```
